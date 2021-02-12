@@ -1,0 +1,26 @@
+.app {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0 15%;
+  justify-content: center;
+  align-content: center;
+  background-color: cornflowerblue;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  min-height: 400px;
+  min-width: 600px;
+  padding: 20px 30px;
+  grid-auto-flow: column;
+  /* add auto because gap */
+  grid-template-columns: 75% auto;
+  gap: 20px;
+  background-color: #fff;
+  border: 2px solid rgb(92, 91, 91);
+  border-radius: 25px;
+  box-sizing: border-box;
+}
