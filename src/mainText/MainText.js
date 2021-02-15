@@ -1,11 +1,10 @@
 import React from 'react'
 import $ from 'jquery'
 import styles from './MainText.module.css'
+import './textStyles.css'
 
 export default function MainText() {
-  let text = [],
-    lettersInSpan = [],
-    counter = 0
+  let text = []
 
   // get random text
   function getBaconText() {
@@ -26,37 +25,12 @@ export default function MainText() {
       }
     )
   }
+  //in the start first letter should be current
+  window.onload = function () {
+    $('#mainText > span:nth-child(1)').addClass('current')
+  }
 
   getBaconText()
-
-  document.addEventListener('keypress', (event) => {
-    const keyName = event.key
-
-    lettersInSpan = $('#mainText').children()
-
-    let prevLetter = lettersInSpan[counter - 1],
-      curLetter = lettersInSpan[counter],
-      nextLetter = lettersInSpan[counter + 1]
-
-    //возможно проблема в модулях
-    if (keyName == curLetter.innerHTML) {
-      //add green background to current
-      $(curLetter).addClass(styles.current)
-
-      //rm green background from previous
-      $(prevLetter).removeClass('current')
-
-      //add green color to passed
-      $(prevLetter).addClass('passed')
-
-      counter++
-
-      $(prevLetter).removeClass('current')
-    } else {
-      // $(prevLetter).removeClass(styles.current)
-      $(curLetter).addClass(styles.wrong)
-    }
-  })
 
   return <div className={styles.container} id='mainText'></div>
 }

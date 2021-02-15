@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './StatBox.module.css'
 
-export default function StatBox() {
+export default function StatBox({ speedTyping }) {
   return (
     <div className={styles.containerStatbox}>
       <div className={styles.containerSpeed}>
@@ -11,7 +11,7 @@ export default function StatBox() {
         </div>
 
         <div className={styles.speedValues}>
-          <h2>1200</h2>
+          <h2>{speedTyping}</h2>
           <p>Симв./мин</p>
         </div>
       </div>

@@ -1,0 +1,21 @@
+.current {
+  background-color: rgb(32, 180, 32);
+  color: #fff;
+}
+
+.wrong {
+  background-color: rgb(226, 32, 32);
+  color: #fff;
+}
+
+.passed {
+  color: rgb(32, 180, 32);
+}
+
+.current,
+.wrong {
+  padding: 5px;
+  font-size: 18px;
+  min-width: 20px;
+  border-radius: 4px;
+}
