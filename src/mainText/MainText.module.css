@@ -3,3 +3,23 @@
   font-size: 18px;
   line-height: 30px;
 }
+
+.current {
+  background-color: rgb(17, 158, 17);
+  color: #fff;
+}
+
+.wrong {
+  background-color: rgb(226, 42, 42);
+  color: #fff;
+}
+
+.passed {
+  color: rgb(17, 158, 17);
+}
+
+.current,
+.wrong {
+  padding: 3px;
+  border-radius: 4px;
+}

@@ -13,6 +13,7 @@
 .container {
   display: grid;
   min-height: 400px;
+  width: 80vw;
   min-width: 600px;
   padding: 20px 30px;
   grid-auto-flow: column;
@@ -23,4 +24,5 @@
   border: 2px solid rgb(92, 91, 91);
   border-radius: 25px;
   box-sizing: border-box;
+  overflow-y: auto;
 }
