@@ -26,6 +26,10 @@
   color: rgb(81, 132, 228);
 }
 
+.speedValues h2 {
+  text-align: center;
+}
+
 .speedValues,
 .speedTitles,
 .containerAgain {
